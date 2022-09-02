@@ -48,7 +48,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* transition: all 0.3s ease-in-out; */
 }
 .calc-logo {
   font-size: 30px;
@@ -93,7 +92,6 @@ header {
   background-color: var(--red);
   border-radius: 50%;
   cursor: pointer;
-  /* transition: all 0.3s ease-in-out; */
 }
 .cyan {
   width: 15px;
@@ -101,7 +99,6 @@ header {
   background-color: var(--darkblue);
   border-radius: 50%;
   cursor: pointer;
-  /* transition: all 0.2s ease-in-out; */
 }
 .green {
   width: 15px;
@@ -311,10 +308,8 @@ header {
     display: flex;
     height: 100vh;
     max-width: 600px;
-    justify-content: center;
-    align-items: center;
+
     margin: 0 auto;
-    /* transition: all 0.3s ease-in-out; */
   }
   .calc-logo {
     font-size: 20px;
@@ -361,7 +356,6 @@ header {
     background-color: var(--red);
     border-radius: 50%;
     cursor: pointer;
-    /* transition: all 0.3s ease-in-out; */
   }
   .cyan {
     width: 8px;
@@ -369,7 +363,6 @@ header {
     background-color: var(--darkblue);
     border-radius: 50%;
     cursor: pointer;
-    /* transition: all 0.2s ease-in-out; */
   }
   .green {
     width: 8px;
