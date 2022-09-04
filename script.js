@@ -7,9 +7,9 @@ const operators = document.querySelectorAll(".operator");
 const deleteBtn = document.querySelector(".delete-btn");
 const resetBtn = document.querySelector(".reset-btn");
 const resultBtn = document.querySelector(".equal-btn");
-const redTheme = document.querySelector(".red");
-const themeTwo = document.querySelector(".cyan");
-const greenTheme = document.querySelector(".green");
+const redTheme = document.querySelector(".one");
+const themeTwo = document.querySelector(".two");
+const greenTheme = document.querySelector(".three");
 /// functionalities
 // let num = 3455555;
 // num = num.toLocaleString("fr-FR");
@@ -25,9 +25,14 @@ for (let i = 0; i < numbers.length; i++) {
 }
 for (let i = 0; i < operators.length; i++) {
   operators[i].addEventListener("click", function () {
+    if (output.value !== "") {
+      output.value = eval(output.value);
+    }
     if (output.value !== "" && !output.value.includes(operators[i].value)) {
       output.value += operators[i].value;
     }
+    // ask questions
+    // output.value = eval(output.value);
   });
 }
 
@@ -54,7 +59,6 @@ greenTheme.addEventListener("click", function () {
 deleteBtn.addEventListener("click", function () {
   let string = output.value.toString();
   output.value = string.substr(0, string.length - 1);
-  console.log("ckicked");
 });
 
 // testing functionalities with a small project
@@ -67,5 +71,5 @@ deleteBtn.addEventListener("click", function () {
 //   eval(number);
 //   result.textContent = eval(number);
 //   numberField.value = result.textContent;
-//   console.log(result.textContent);
+//   console.log(result.textContent);c
 //
